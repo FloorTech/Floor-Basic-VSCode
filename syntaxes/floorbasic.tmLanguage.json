@@ -1,0 +1,22 @@
+{
+  "name": "Floor Basic",
+  "scopeName": "source.floorbasic",
+  "patterns": [
+    {
+      "name": "comment.line.semicolon.floorbasic",
+      "match": ";.*$"
+    },
+    {
+      "name": "keyword.control.floorbasic",
+      "match": "\\b(SETVALUE|PX|PRINT|GOTO|INPUT|APPEND_VALUE|CLEAR_VALUE|ADD|SUB|NL|CLS|WAIT)\\b"
+    },
+    {
+      "name": "constant.language.color.floorbasic",
+      "match": "\\b(newline|clear|red|orange|yellow|green|blue|purple|brown|black|pink|bricks)\\b"
+    },
+    {
+      "name": "string.unquoted.floorbasic",
+      "match": "(?<=\\s)[^;\\s]+"
+    }
+  ]
+}

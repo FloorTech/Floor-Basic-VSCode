@@ -1,0 +1,51 @@
+{
+  "name": "floor-basic-vscode",
+  "displayName": "Floor Basic for VSCode",
+  "description": "Modern syntax highlighting + IntelliSense for Floor Basic",
+  "version": "0.1.1",
+  "publisher": "FloorTech",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:floorbasic"
+  ],
+  "main": "./dist/extension.js",
+  "repository": "github:FloorTech/Floor-Basic-VSCode",
+  "contributes": {
+    "languages": [
+      {
+        "id": "floorbasic",
+        "aliases": [
+          "Floor Basic",
+          "floorbasic"
+        ],
+        "extensions": [
+          ".fb"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "floorbasic",
+        "scopeName": "source.floorbasic",
+        "path": "./syntaxes/floorbasic.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.22.0",
+    "@vscode/vsce": "^3.6.0",
+    "typescript": "^5.0.0",
+    "vscode": "^1.1.34"
+  }
+}
