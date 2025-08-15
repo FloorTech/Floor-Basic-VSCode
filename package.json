@@ -2,7 +2,7 @@
   "name": "floor-basic-vscode",
   "displayName": "Floor Basic for VSCode",
   "description": "Modern syntax highlighting + IntelliSense for Floor Basic",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "publisher": "FloorTech",
   "engines": {
     "vscode": "^1.22.0"
